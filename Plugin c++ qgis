@@ -1,0 +1,12 @@
+ Préparation de l'environnement de développement :
+1)      Suivre les instructions dans
+https://www.qgis.org/fr/site/forusers/alldownloads.html  pour installer les clés
+publiques des dépôts QGIS
+2)      Installer qgis et libqgis-dev en utilisant apt-get
+3)      Forker le squelette du plugin (GitHub) et le cloner
+(https://github.com/malamioute/agileplugin)
+4)      Ouvrir le projet Code::Blocks et utiliser CTRL-F9 pour compiler le plugin et
+le copier dans QGIS (sudo requis)
+5)      (optionel) Ajouter les includes de QGIS dans C/C++ parser options pour
+l'auto-complétion
+6)      Modifier agileplugin.pro en cas d'ajouts/suppressions de fichiers source
