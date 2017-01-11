@@ -1,0 +1,14 @@
+
+
+Open the terminal and type :
+
+wget https://remarkableapp.github.io/files/remarkable_1.62_all.deb
+
+And :
+
+sudo gdebi remarkable_1.62_all.deb
+
+if you get error like gdebi: commande not found you can install it by typing :
+
+sudo apt-get install gdebi-core
+
