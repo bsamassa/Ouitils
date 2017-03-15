@@ -1,0 +1,38 @@
+** Using the provided graphical installer
+Follow these steps:
+
+    * Find the yEd Graph Editor section on the yworks download page
+    * Download the appropriate Linux yEd installer for your system (32- or 64-bit)
+    * Make the installer executable with chmod +x yEd<...>.sh or by going into the properties menu of your file manager (Properties → Permissions → Allow executing file as program)
+    * Run the installer and follow the outlined steps
+    * When you're done you should be able to find yEd in your Unity Dash
+
+
+
+** Manual installation
+
+    * Make sure you have the latest Java release installed
+    * Download the zipped yEd release on its download page
+    * Extract the contents of the zipfile
+
+    * Navigate to the extracted folder and open yed.jar in java:
+    java -jar "yed.jar"
+
+    * To integrate yEd into your system you can create a .desktop launcher under ~/.local/share/applications. E.g.:
+
+    $ cat ~/.local/share/applications/yed.desktop
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=yEd Graph Editor
+    Comment=Edit graphml files in yed
+    Exec=java -jar /home/user/applications/yEd/yed.jar %u
+    Terminal=false
+    Type=Application
+    Icon=/home/user/applications/yEd/icons/yicon32.png
+    Categories=Application;Office
+    StartupNotify=false
+    MimeType=application/xml;
+    NoDisplay=false
+
+    Make sure to change the Exec= and Icon= lines according to your system.
+
